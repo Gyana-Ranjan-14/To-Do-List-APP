@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #6beacc 0%, #497be8 100%);
+}
+
+.wrapper {
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.wrapper .header {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.wrapper .inputfield {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.inputfield input {
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding-left: 15px;
+    outline: none;
+}
+
+.inputfield button {
+    width: 55px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #be49e8;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+    /* The element does not  receive pointer events*/
+}
+
+.inputfield button.active {
+    opacity: 1;
+    pointer-events: auto;
+    /* The element does not  receive pointer events*/
+}
+
+.wrapper .todolist {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.todolist li {
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.todolist li span {
+    position: absolute;
+    right: 0px;
+    color: #fff;
+    text-align: center;
+    background: #e74c3c;
+    width: 45px;
+    right: -45px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.todolist li:hover span {
+    right: 0px;
+}
+
+.wrapper .footer {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer button {
+    border: none;
+    outline: none;
+    background: #be49e8;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 6px 10px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.footer button.active {
+    opacity: 1;
+    pointer-events: auto;
+    /* The element does not  receive pointer events*/
+}
